@@ -1,4 +1,5 @@
-#import math
+import math
+
 class Intervallhalbierung:
     def zeros(self, f, a, b, steps):
         """calculates an approximate zero. f, a, b, steps"""
@@ -23,5 +24,5 @@ class Intervallhalbierung:
         else:
             return zeros(f, middle, b, steps)
 
-    #print(zeros(lambda x: -(x**2) + 2, -4, 0, 10))
-    #print(zeros(lambda x: math.sin(x), 1, 4, 10))
+print(Intervallhalbierung.zeros(lambda x: -(x**2) + 2, -4, 0, 10))
+print(Intervallhalbierung.zeros(lambda x: math.sin(x), 1, 4, 10))
