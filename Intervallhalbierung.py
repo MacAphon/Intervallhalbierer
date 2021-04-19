@@ -1,6 +1,6 @@
 import math
 
-def zeros(self, f, a, b, steps):
+def zeros(f, a, b, steps):
     """calculates an approximate zero. f, a, b, steps"""
     if steps == 0:
         return [a, b]
